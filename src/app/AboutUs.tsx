@@ -19,7 +19,7 @@ export const AboutUs = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Us</h2>
-          <p className="text-xl text-gray-600">We're passionate about driving digital success for our clients</p>
+          <p className="text-xl text-gray-600">We&apos;re passionate about driving digital success for our clients</p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8">
           <motion.div
