@@ -31,15 +31,15 @@ export const ContactUs = () => {
             <form>
               <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
-                <input type="text" id="name" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                <input type="text" id="name" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#81a6cb]" />
               </div>
               <div className="mb-4">
                 <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
-                <input type="email" id="email" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                <input type="email" id="email" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#81a6cb]" />
               </div>
               <div className="mb-4">
                 <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
-                <textarea id="message" rows={4} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                <textarea id="message" rows={4} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#81a6cb]"></textarea>
               </div>
               <motion.button
                 whileHover={{ scale: 1.05 }}
