@@ -2,17 +2,27 @@
 
 import { motion } from 'framer-motion'
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import { useState } from 'react'
 
 export const Footer = () => {
+  const [email, setEmail] = useState('')
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // Aquí iría la lógica para manejar la suscripción
+    console.log('Email submitted:', email)
+    setEmail('')
+  }
+
   return (
     <motion.footer
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#282830] text-white py-8"
+      className="bg-[#282830] text-white py-8 px-4 sm:px-6 lg:px-8"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">DigiMarkPro</h3>
             <p className="text-gray-400">Elevating your digital presence with innovative marketing solutions.</p>
@@ -46,18 +56,23 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
             <p className="text-gray-400 mb-2">Stay updated with our latest news and offers.</p>
-            <form className="flex">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-[#89acce]"
+                className="flex-grow px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#89acce]"
+                required
               />
-              <button
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="bg-[#89acce] text-white px-4 py-2 rounded-r-md hover:bg-[#799fc5] transition duration-300"
+                className="px-6 py-2 bg-[#89acce] text-white rounded-md hover:bg-[#799fc5] transition duration-300 ease-in-out"
               >
                 Subscribe
-              </button>
+              </motion.button>
             </form>
           </div>
         </div>
