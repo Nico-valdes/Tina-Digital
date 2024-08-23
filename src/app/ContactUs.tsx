@@ -19,7 +19,7 @@ export const ContactUs = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#36628f] mb-4">Contact Us</h2>
           <p className="text-xl text-gray-600">Get in touch with our team of digital marketing experts</p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -44,7 +44,7 @@ export const ContactUs = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-indigo-600 text-white py-2 px-4 rounded-full font-bold hover:bg-indigo-700 transition duration-300"
+                className="bg-[#89acce] text-white py-2 px-4 rounded-full font-bold hover:bg-[#81a6cb] transition duration-300"
               >
                 Send Message
               </motion.button>
@@ -59,15 +59,15 @@ export const ContactUs = () => {
               <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <MapPin className="w-6 h-6 text-indigo-600 mr-2" />
+                  <MapPin className="w-6 h-6 text-[#89acce] mr-2" />
                   <span>123 Digital Street, Marketing City, 12345</span>
                 </li>
                 <li className="flex items-center">
-                  <Phone className="w-6 h-6 text-indigo-600 mr-2" />
+                  <Phone className="w-6 h-6 text-[#89acce] mr-2" />
                   <span>+1 (555) 123-4567</span>
                 </li>
                 <li className="flex items-center">
-                  <Mail className="w-6 h-6 text-indigo-600 mr-2" />
+                  <Mail className="w-6 h-6 text-[#89acce] mr-2" />
                   <span>info@digimarkpro.com</span>
                 </li>
               </ul>
