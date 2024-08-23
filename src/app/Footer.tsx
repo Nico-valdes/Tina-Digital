@@ -56,20 +56,20 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
             <p className="text-gray-400 mb-2">Stay updated with our latest news and offers.</p>
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
+            <form onSubmit={handleSubmit} className="flex flex-wrap items-center gap-2">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-grow px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#89acce]"
+                className="flex-grow min-w-0 px-3 py-2 text-sm sm:text-base rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#89acce]"
                 required
               />
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="px-6 py-2 bg-[#89acce] text-white rounded-md hover:bg-[#799fc5] transition duration-300 ease-in-out"
+                className="px-4 py-2 text-sm sm:text-base bg-[#89acce] text-white rounded-md hover:bg-[#799fc5] transition duration-300 ease-in-out whitespace-nowrap"
               >
                 Subscribe
               </motion.button>
