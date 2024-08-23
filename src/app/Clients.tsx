@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from "next/image"
 
 const clients = [
   { name: 'Client 1', logo: '/placeholder.svg?height=80&width=120' },
@@ -39,7 +40,7 @@ export const Clients = () => {
               transition={{ delay: 0.2 + index * 0.1, duration: 0.5 }}
               className="flex items-center justify-center"
             >
-              <img src={client.logo} alt={client.name} className="max-h-16" />
+              <Image src={client.logo} alt={client.name} className="max-h-16" />
             </motion.div>
           ))}
         </div>
